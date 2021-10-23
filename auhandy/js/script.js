@@ -171,6 +171,17 @@ testWebP(function (support) {
 
 
 
+if (window.innerWidth <= 475) {
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.header__lens') && !e.target.closest('.header__search')) {
+      document.querySelector('.header__search').style.cssText = 'opacity: 0; visibility: hidden;'
+    } else {
+      document.querySelector('.header__search').style.cssText = 'opacity: 1; visibility: visible;'
+    }
+  })
+}
+
+
 // Бургер-меню
 const body = document.querySelector('body')
 const burger = document.querySelector('.burger')

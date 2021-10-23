@@ -121,6 +121,7 @@ img {
   }
 
   &__body {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,6 +167,11 @@ img {
   }
 
   picture {
+    &:hover + .header__search {
+      opacity: 1;
+      visibility: visible;
+    }
+
     @media (max-width: 720px) {
       margin-left: auto;
     }
@@ -175,10 +181,35 @@ img {
     height: 16px;
     margin-left: 25px;
     cursor: pointer;
+
+    @media (max-width: 475px) {
+      margin-left: 0;
+    }
   }
 
   &__search {
-    display: none;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    @media (max-width: 720px) {
+      right: 75px;
+      bottom: 47px;
+    }
+
+    @media (max-width: 475px) {
+      right: 45px;
+      bottom: 10px;
+    }
   }
 }
 
