@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>AUHandy</title>
+</head>
+
+<body>
+  @@include('_header.html')
+
+  <main class="main">
+    <section class="preview">
+      <div class="container">
+        <img src="img/joy.png" alt="Toy" class="preview__img">
+        <h1>Expert Handyman & Remodeling</h1>
+        <p>Integer consectetur dapibus nisi, et faucibus augue lobortis ut. Proin quis porttitor sem. Donec ultrices
+          felis quis
+          tincidunt</p>
+        <button data-popup="popup" class="preview__button button button_orange popup__link">Learn More</button>
+        <button class="preview__button button button__transparent">Get A Quote</button>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="container">
+        <p>We have 13 years of experience in Auhandy.</p>
+        <button class="experience__button button_orange">
+          <img src="img/mobile.svg" alt="Phone" class="experience__img">
+          +1 23 568 8967
+        </button>
+      </div>
+    </section>
+
+    <section class="choose-us">
+      <div class="container">
+        <img src="img/joy.png" alt="Toy" class="choose-us__img">
+        <h2>Why Choose Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec ligula temp cursus justo eu, blandit
+          quam. Sed viverra, quam ut maximus porta, lorem bibendum metus, et eleifend mi nunc ac arcu facilisis lorem
+          urna eu quam.</p>
+        <div class="choose-us__block">
+          <img src="img/gear.svg" alt="Gear">
+          <h4>Easy To Customize.</h4>
+          <p>Mauris efficitur mi eu nisi venenatis vestibulum sit tellus.</p>
+        </div>
+        <div class="choose-us__block">
+          <img src="img/comment.svg" alt="Comment">
+          <h4>24/7 Support Service</h4>
+          <p>Aliquam vel felis quis ipsum fermentum sollicitudin eget.</p>
+        </div>
+        <div class="choose-us__block">
+          <img src="img/gift.svg" alt="Gift">
+          <h4>Gift For Loyal Customers</h4>
+          <p>Ut imperdiet libero sed tel pretium convallis quis lectus.</p>
+        </div>
+        <div class="choose-us__block">
+          <img src="img/heart.svg" alt="Heart">
+          <h4>Favorite Customers</h4>
+          <p>Lorem ipsum dolor sit a consectetur adipiscing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="swiper-container services__slider">
+          <div class="swiper-wrapper services__slider-wrapper">
+            <div class="swiper-slide services__slider-slide">
+              <img src="img/gears.svg" alt="Gears" class="services__slider-img">
+              <h3>Engine Repairs</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="swiper-slide services__slider-slide">
+              <img src="img/light_bolt.svg" alt="Light bolt" class="services__slider-img">
+              <h3>Electrical</h3>
+              <p>Donec malesuada, purus a viverra sodales leo purus lobortis</p>
+            </div>
+            <div class="swiper-slide services__slider-slide">
+              <img src="img/pipe.svg" alt="Pipe" class="services__slider-img">
+              <h3>Plumbing</h3>
+              <p>Praesent dignissim mattis mauris. Sed finibus elementu.</p>
+            </div>
+            <div class="swiper-slide services__slider-slide">
+              <img src="img/wrench.svg" alt="Wrench" class="services__slider-img">
+              <h3>Repair House</h3>
+              <p>Phasellus venenatis mauris eget isque tincidunt</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev services__slider-prev"><img src="img/arrow-left.svg" alt="Left"></div>
+        <div class="swiper-button-next services__slider-next"><img src="img/arrow-right.svg" alt="Right"></div>
+        <button class="projects__button button button_orange">View All Services</button>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <h2>Our Projects</h2>
+        <ul class="projects__list">
+          <li><a href="#tab-1" class="projects__switch active">All</a></li>
+          <li><a href="#tab-2" class="projects__switch">Engine Repair</a></li>
+          <li><a href="#tab-3" class="projects__switch">Electrical</a></li>
+          <li><a href="#tab-4" class="projects__switch">Plumbing</a></li>
+          <li><a href="#tab-5" class="projects__switch">Repair House</a></li>
+          <li><a href="#tab-6" class="projects__switch">Wall Paint</a></li>
+        </ul>
+        <div class="projects__content">
+          <div class="projects__menu active-tab" id="tab-1">
+            <a href="#" class="projects__menu-item">
+              <img src="img/router.jpg" alt="Router">
+              <div class="projects__menu-hover">
+                <p>Pellentesque finibus maximus.</p>
+                <img src="img/search.svg" alt="search">
+              </div>
+            </a>
+            <a href="#" class="projects__menu-item">
+              <img src="img/teddy.jpg" alt="Teddy Bear">
+              <div class="projects__menu-hover">
+                <p>Pellentesque finibus maximus.</p>
+                <img src="img/search.svg" alt="search">
+              </div>
+            </a>
+            <a href="#" class="projects__menu-item">
+              <img src="img/joy.png" alt="Toy">
+              <div class="projects__menu-hover">
+                <p>Pellentesque finibus maximus.</p>
+                <img src="img/search.svg" alt="search">
+              </div>
+            </a>
+            <a href="#" class="projects__menu-item">
+              <img src="img/joy.png" alt="Toy">
+              <div class="projects__menu-hover">
+                <p>Pellentesque finibus maximus.</p>
+                <img src="img/search.svg" alt="search">
+              </div>
+            </a>
+            <a href="#" class="projects__menu-item">
+              <img src="img/router.jpg" alt="Router" class="reverse">
+              <div class="projects__menu-hover">
+                <p>Pellentesque finibus maximus.</p>
+                <img src="img/search.svg" alt="search">
+              </div>
+            </a>
+            <a href="#" class="projects__menu-item">
+              <img src="img/teddy.jpg" alt="Teddy Bear">
+              <div class="projects__menu-hover">
+                <p>Pellentesque finibus maximus.</p>
+                <img src="img/search.svg" alt="search">
+              </div>
+            </a>
+          </div>
+          <div class="projects__menu" id="tab-2"></div>
+          <div class="projects__menu" id="tab-3"></div>
+          <div class="projects__menu" id="tab-4"></div>
+          <div class="projects__menu" id="tab-5"></div>
+          <div class="projects__menu" id="tab-6"></div>
+        </div>
+        <button class="projects__button button button_orange">All Projects</button>
+      </div>
+    </section>
+
+    <section class="problems">
+      <div class="container">
+        <h3>You have some problems in housing?</h3>
+        <button class="experience__button button_orange">
+          <img src="img/mobile.svg" alt="Phone" class="experience__img">
+          +1 23 567 8596
+        </button>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="container">
+        <div class="quote__location">
+          <h2>Our Location</h2>
+          <div class="quote__map">
+            <img src="img/map_marker.svg" alt="Marker" class="quote__map-marker">
+          </div>
+        </div>
+        <form action="#" method="get" class="quote__form form">
+          <h2>Get A Quote</h2>
+          <div class="form__valid">
+            <input type="text" class="form__input" placeholder="Your Name">
+          </div>
+          <div class="form__valid">
+            <input type="email" class="form__input" placeholder="Your Email">
+          </div>
+          <div class="form__valid">
+            <input type="text" class="form__input" placeholder="Your Subjects">
+          </div>
+          <div class="form__valid">
+            <input type="tel" class="form__input" placeholder="Your Phone Number">
+          </div>
+          <textarea cols="82" rows="8" class="form__input" placeholder="Description Services Needed"></textarea>
+          <button class="form__button button button_orange">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <img src="img/partner.svg" alt="Partner 1" class="partners__img">
+        <img src="img/partner_2.svg" alt="Partner 2" class="partners__img">
+        <img src="img/partner_3.svg" alt="Partner 3" class="partners__img">
+        <img src="img/partner_4.svg" alt="Partner 4" class="partners__img">
+      </div>
+    </section>
+  </main>
+
+  @@include('_footer.html')
+
+  <div class="popup" id="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#" class="close close__popup">x</a>
+        <form action="#" method="get" class="quote__form form">
+          <h2>Get A Quote</h2>
+          <div class="form__valid">
+            <input type="text" class="form__input" placeholder="Your Name">
+          </div>
+          <div class="form__valid">
+            <input type="email" class="form__input" placeholder="Your Email">
+          </div>
+          <div class="form__valid">
+            <input type="text" class="form__input" placeholder="Your Subjects">
+          </div>
+          <div class="form__valid">
+            <input type="tel" class="form__input" placeholder="Your Phone Number">
+          </div>
+          <textarea cols="82" rows="8" class="form__input" placeholder="Description Services Needed"></textarea>
+          <button class="form__button button button_orange">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/inputmask.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
